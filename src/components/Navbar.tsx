@@ -47,84 +47,77 @@ export default function Navbar() {
         }`}
     >
       {label}
-    </button>
-  );
+      return (
+      <>
+        <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-[#050816]/80 border-b border-white/10">
+          <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-  return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-[#050816]/80 border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
-          CIVITERA
-        </h1>
+            <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
+              CIVITERA
+            </h1>
 
-        <nav className="hidden md:flex gap-8 text-sm">
-          {navItem("technologies", "Technologies")}
-          {navItem("patents", "Patent Ecosystem")}
-          {navItem("governance", "Governance")}
-          {navItem("network", "Network")}
-        </nav>
+            <nav className="hidden md:flex gap-8 text-sm">
+              {navItem("technologies", "Technologies")}
+              {navItem("patents", "Patent Ecosystem")}
+              {navItem("governance", "Governance")}
+              {navItem("network", "Network")}
+            </nav>
 
-        <button
-          type="button"
-          className="px-5 py-2 rounded-full border border-cyan-400 text-cyan-300 hover:bg-cyan-400 hover:text-black transition-all duration-300"
-        >
-          <button
-            type="button"
-            onClick={() => setMobileMenu(!mobileMenu)}
-            className="md:hidden text-cyan-400"
-          >
-            {mobileMenu ? <X size={28} /> : <Menu size={28} />}
-          </button>
-          Contact
-        </button>
-      </div>
-    </header>
-    {
-    mobileMenu && (
-      <div className="fixed inset-0 z-40 bg-[#050816]/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-10 text-2xl font-semibold md:hidden">
+            <button
+              type="button"
+              onClick={() => setMobileMenu(!mobileMenu)}
+              className="md:hidden text-cyan-400"
+            >
+              {mobileMenu ? <X size={28} /> : <Menu size={28} />}
+            </button>
 
-        <button
-          onClick={() => {
-            scrollToSection("technologies");
-            setMobileMenu(false);
-          }}
-          className="text-cyan-400"
-        >
-          Technologies
-        </button>
+          </div>
+        </header>
 
-        <button
-          onClick={() => {
-            scrollToSection("patents");
-            setMobileMenu(false);
-          }}
-          className="text-cyan-400"
-        >
-          Patent Ecosystem
-        </button>
+        {mobileMenu && (
+          <div className="fixed inset-0 z-40 bg-[#050816]/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-10 text-2xl font-semibold md:hidden">
 
-        <button
-          onClick={() => {
-            scrollToSection("governance");
-            setMobileMenu(false);
-          }}
-          className="text-cyan-400"
-        >
-          Governance
-        </button>
+            <button
+              onClick={() => {
+                scrollToSection("technologies");
+                setMobileMenu(false);
+              }}
+              className="text-cyan-400"
+            >
+              Technologies
+            </button>
 
-        <button
-          onClick={() => {
-            scrollToSection("network");
-            setMobileMenu(false);
-          }}
-          className="text-cyan-400"
-        >
-          Network
-        </button>
+            <button
+              onClick={() => {
+                scrollToSection("patents");
+                setMobileMenu(false);
+              }}
+              className="text-cyan-400"
+            >
+              Patent Ecosystem
+            </button>
 
-      </div>
-    )
-  }
-  );
-}
+            <button
+              onClick={() => {
+                scrollToSection("governance");
+                setMobileMenu(false);
+              }}
+              className="text-cyan-400"
+            >
+              Governance
+            </button>
+
+            <button
+              onClick={() => {
+                scrollToSection("network");
+                setMobileMenu(false);
+              }}
+              className="text-cyan-400"
+            >
+              Network
+            </button>
+
+          </div>
+        )}
+      </>
+      );
