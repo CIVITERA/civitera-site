@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+import { Menu, X } from "lucide-react";
 export default function Navbar() {
+  const [mobileMenu, setMobileMenu] = useState(false);
   const [active, setActive] = useState("technologies");
 
   const scrollToSection = (id: string) => {
@@ -41,8 +42,8 @@ export default function Navbar() {
       type="button"
       onClick={() => scrollToSection(id)}
       className={`transition-all duration-300 ${active === id
-          ? "text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]"
-          : "text-gray-300 hover:text-cyan-400"
+        ? "text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+        : "text-gray-300 hover:text-cyan-400"
         }`}
     >
       {label}
@@ -67,9 +68,63 @@ export default function Navbar() {
           type="button"
           className="px-5 py-2 rounded-full border border-cyan-400 text-cyan-300 hover:bg-cyan-400 hover:text-black transition-all duration-300"
         >
+          <button
+            type="button"
+            onClick={() => setMobileMenu(!mobileMenu)}
+            className="md:hidden text-cyan-400"
+          >
+            {mobileMenu ? <X size={28} /> : <Menu size={28} />}
+          </button>
           Contact
         </button>
       </div>
     </header>
+    {
+    mobileMenu && (
+      <div className="fixed inset-0 z-40 bg-[#050816]/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-10 text-2xl font-semibold md:hidden">
+
+        <button
+          onClick={() => {
+            scrollToSection("technologies");
+            setMobileMenu(false);
+          }}
+          className="text-cyan-400"
+        >
+          Technologies
+        </button>
+
+        <button
+          onClick={() => {
+            scrollToSection("patents");
+            setMobileMenu(false);
+          }}
+          className="text-cyan-400"
+        >
+          Patent Ecosystem
+        </button>
+
+        <button
+          onClick={() => {
+            scrollToSection("governance");
+            setMobileMenu(false);
+          }}
+          className="text-cyan-400"
+        >
+          Governance
+        </button>
+
+        <button
+          onClick={() => {
+            scrollToSection("network");
+            setMobileMenu(false);
+          }}
+          className="text-cyan-400"
+        >
+          Network
+        </button>
+
+      </div>
+    )
+  }
   );
 }
