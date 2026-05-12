@@ -70,7 +70,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <Badge text="Patent Infrastructure" />
 
-            <h2 className="text-5xl md:text-7xl font-black leading-tight">
+            <h2 className="text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-5xl md:text-7xl font-black leading-tight">
               Building The
               <span className="block text-cyan-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.6)]">
                 Sovereign Patent
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto text-center">
             <Badge text="Global Infrastructure Network" />
 
-            <h2 className="text-5xl md:text-7xl font-black leading-tight">
+            <h2 className="text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-4xl sm:text-5xl md:text-7xl font-black leading-tight">
               Connecting The
               <span className="block text-cyan-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.6)]">
                 Future AI Civilization
@@ -173,8 +173,8 @@ export default function Home() {
               and civilization-scale AI coordination systems.
             </p>
 
-            <div className="relative mt-24 flex items-center justify-center min-h-[620px]">
-              <div className="absolute w-[700px] h-[700px] rounded-full border border-cyan-400/10" />
+            <div className="relative mt-24 flex items-center justify-center min-h-[420px] md:min-h-[620px]">
+              <div className="absolute w-[320px] h-[320px] md:w-[700px] md:h-[700px] rounded-full border border-cyan-400/10" />
               <div className="absolute w-[500px] h-[500px] rounded-full border border-cyan-400/10" />
               <div className="absolute w-[300px] h-[300px] rounded-full border border-cyan-400/10" />
 
