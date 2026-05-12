@@ -64,53 +64,54 @@ export default function Home() {
 
       <SectionDivider />
       <AnimatedSection>
-        <section id="patents" className="relative z-10 py-32 px-6 overflow-hidden scroll-mt-32">
-          <div className="max-w-7xl mx-auto text-center">
+        <section id="patents" className="relative z-10 py-40 px-6 overflow-hidden scroll-mt-32">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.08),transparent_55%)]" />
 
+          <div className="max-w-7xl mx-auto text-center relative z-10">
             <Badge text="Patent Infrastructure" />
 
             <h2 className="text-5xl md:text-7xl font-black leading-tight">
-
               Building The
-
               <span className="block text-cyan-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.6)]">
                 Sovereign Patent
               </span>
-
               Ecosystem
-
             </h2>
 
             <p className="mt-8 max-w-3xl mx-auto text-gray-400 text-lg leading-relaxed">
-              CIVITERA develops interconnected deep-tech systems,
-              sovereign infrastructure technologies,
-              and civilization-scale patent architectures.
+              CIVITERA develops a layered intellectual property architecture for sovereign AI,
+              governance infrastructure, identity control, compliance intelligence, and future
+              civilization-scale digital systems.
             </p>
 
             <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {patentCards.map(([type, title, text]) => (
                 <div
                   key={title}
-                  className="p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:border-cyan-400/40 hover:-translate-y-2 transition-all duration-500"
+                  className="group relative text-left p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden hover:border-cyan-400/40 hover:-translate-y-2 hover:shadow-[0_0_50px_rgba(34,211,238,0.14)] transition-all duration-500"
                 >
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.16),transparent_65%)]" />
 
-                  <div className="text-cyan-400 text-sm mb-3">
+                  <div className="relative z-10 text-cyan-400 text-xs tracking-[0.25em] uppercase mb-4">
                     {type}
                   </div>
 
-                  <h3 className="text-2xl font-semibold mb-4">
+                  <h3 className="relative z-10 text-2xl font-semibold mb-4">
                     {title}
                   </h3>
 
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="relative z-10 text-gray-400 leading-relaxed">
                     {text}
                   </p>
 
+                  <div className="relative z-10 mt-8 h-px w-full bg-gradient-to-r from-cyan-400/40 to-transparent" />
+
+                  <div className="relative z-10 mt-5 text-xs text-gray-500 uppercase tracking-[0.2em]">
+                    CIVITERA IP Layer
+                  </div>
                 </div>
               ))}
-
             </div>
-
           </div>
         </section>
       </AnimatedSection>
