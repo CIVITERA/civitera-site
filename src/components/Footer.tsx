@@ -66,7 +66,37 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-5">
             Contact
           </h3>
+          <div className="mt-6">
+            <h3 className="text-white font-semibold mb-4">
+              Social
+            </h3>
 
+            <ul className="space-y-3 text-gray-400">
+              <li>
+                <a href="https://github.com/CIVITERA" target="_blank" className="hover:text-cyan-400 transition">
+                  GitHub
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-cyan-400 transition">
+                  LinkedIn
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-cyan-400 transition">
+                  X / Twitter
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-cyan-400 transition">
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul className="space-y-3 text-gray-400">
             <li>info@civitera.ai</li>
             <li>research@civitera.ai</li>
