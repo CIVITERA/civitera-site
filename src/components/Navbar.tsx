@@ -42,11 +42,10 @@ export default function Navbar() {
     <button
       type="button"
       onClick={() => scrollToSection(id)}
-      className={`transition-all duration-300 ${
-        active === id
-          ? "text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]"
-          : "text-gray-300 hover:text-cyan-400"
-      }`}
+      className={`transition-all duration-300 ${active === id
+        ? "text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+        : "text-gray-300 hover:text-cyan-400"
+        }`}
     >
       {label}
     </button>
@@ -74,10 +73,33 @@ export default function Navbar() {
           </h1>
 
           <nav className="hidden md:flex gap-8 text-sm">
-            {navItem("technologies", "Technologies")}
-            {navItem("patents", "Patent Ecosystem")}
-            {navItem("governance", "Governance")}
-            {navItem("network", "Network")}
+            <a
+              href="/"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              Home
+            </a>
+
+            <a
+              href="/research"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              Research
+            </a>
+
+            <a
+              href="/patents"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              Patents
+            </a>
+
+            <a
+              href="/governance"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              Governance
+            </a>
           </nav>
 
           <button
@@ -99,10 +121,21 @@ export default function Navbar() {
 
       {mobileMenu && (
         <div className="fixed inset-0 z-40 bg-[#050816]/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-10 text-2xl font-semibold md:hidden">
-          {mobileItem("technologies", "Technologies")}
-          {mobileItem("patents", "Patent Ecosystem")}
-          {mobileItem("governance", "Governance")}
-          {mobileItem("network", "Network")}
+          <a href="/" className="text-cyan-400">
+            Home
+          </a>
+
+          <a href="/research" className="text-cyan-400">
+            Research
+          </a>
+
+          <a href="/patents" className="text-cyan-400">
+            Patents
+          </a>
+
+          <a href="/governance" className="text-cyan-400">
+            Governance
+          </a>
         </div>
       )}
     </>
