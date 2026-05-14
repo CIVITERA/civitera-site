@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import Image from "next/image";
 export default function Navbar() {
   const [active, setActive] = useState("technologies");
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -69,13 +69,19 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-[#050816]/80 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl border border-cyan-400/40 bg-cyan-400/10 flex items-center justify-center shadow-[0_0_30px_rgba(34,211,238,0.25)]">
-              <span className="text-cyan-400 font-black text-xl">C</span>
-            </div>
 
-            <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
+            <Image
+              src="/logo.png"
+              alt="CIVITERA"
+              width={42}
+              height={42}
+              className="drop-shadow-[0_0_25px_rgba(59,130,246,0.45)]"
+            />
+
+            <h1 className="text-2xl font-black tracking-[0.25em] bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               CIVITERA
             </h1>
+
           </div>
           <nav className="hidden md:flex gap-8 text-sm">
             <a

@@ -1,10 +1,23 @@
 "use client";
 
 import { ArrowRight, Shield, Globe, Cpu } from "lucide-react";
-
+import Image from "next/image";
 export default function Hero() {
+  <div className="flex justify-center mb-10">
+
+    <Image
+      src="/logo.png"
+      alt="CIVITERA"
+      width={140}
+      height={140}
+      className="drop-shadow-[0_0_40px_rgba(59,130,246,0.35)]"
+    />
+
+  </div>
   const cards = [
+
     {
+
       icon: Cpu,
       title: "AI Governance",
       text: "Advanced governance systems for autonomous intelligence and sovereign AI infrastructure.",
@@ -32,7 +45,7 @@ export default function Hero() {
           Sovereign AI Infrastructure
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-black leading-tight tracking-[-0.04em] max-w-full">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[6rem] font-black leading-tight tracking-[-0.04em] max-w-full">
           Engineering The
           <span className="block text-cyan-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.6)]">
             Sovereign Intelligence
@@ -57,7 +70,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card) => (
             <div
               key={card.title}
