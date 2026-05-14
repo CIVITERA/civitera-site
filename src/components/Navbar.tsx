@@ -79,7 +79,9 @@ export default function Navbar() {
             >
               Home
             </a>
-
+            <a href="/about" className="text-cyan-400">
+              About
+            </a>
             <a
               href="/research"
               className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
@@ -122,9 +124,7 @@ export default function Navbar() {
           >
             Contact
           </button>
-          <a href="/about" className="text-cyan-400">
-            About
-          </a>
+
         </div>
       </header>
 
@@ -133,7 +133,12 @@ export default function Navbar() {
           <a href="/" className="text-cyan-400">
             Home
           </a>
-
+          <a
+            href="/about"
+            className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+          >
+            About
+          </a>
           <a href="/research" className="text-cyan-400">
             Research
           </a>
@@ -148,12 +153,7 @@ export default function Navbar() {
           <a href="/contact" className="text-cyan-400">
             Contact
           </a>
-          <a
-            href="/about"
-            className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
-          >
-            About
-          </a>
+
         </div>
       )}
     </>
