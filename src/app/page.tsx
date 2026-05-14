@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Brain, Globe, Cpu, Network, Lock } from "lucide-react";
 import { useEffect, useState } from "react";
-
+import Footer from "@/components/Footer";
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -228,6 +228,7 @@ export default function Home() {
           © 2026 CIVITERA GovTech Inc. All rights reserved.
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

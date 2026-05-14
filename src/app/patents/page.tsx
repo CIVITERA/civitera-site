@@ -1,6 +1,6 @@
 import { Shield, Network, Cpu, Lock } from "lucide-react";
 import Navbar from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 export default function PatentsPage() {
   const patents = [
     {
@@ -72,6 +72,7 @@ export default function PatentsPage() {
           ))}
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

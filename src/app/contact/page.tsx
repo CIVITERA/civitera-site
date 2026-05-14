@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 export default function ContactPage() {
   const contacts = [
     {
@@ -87,6 +87,7 @@ export default function ContactPage() {
 
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

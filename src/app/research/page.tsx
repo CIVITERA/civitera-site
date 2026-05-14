@@ -1,6 +1,6 @@
 import { Brain, Shield, Globe, Cpu } from "lucide-react";
 import Navbar from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 export default function ResearchPage() {
   const areas = [
     {
@@ -71,6 +71,7 @@ export default function ResearchPage() {
           ))}
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
