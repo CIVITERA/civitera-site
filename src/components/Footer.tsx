@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-black/20 backdrop-blur-2xl px-6 py-20 overflow-hidden">
@@ -12,9 +13,19 @@ export default function Footer() {
               <span className="text-cyan-400 font-black text-xl">C</span>
             </div>
 
-            <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
-              CIVITERA
-            </h1>
+            <div className="flex items-center gap-3 mb-6">
+              <Image
+                src="/logo.png"
+                alt="CIVITERA Logo"
+                width={64}
+                height={64}
+                className="rounded-xl object-contain drop-shadow-[0_0_25px_rgba(59,130,246,0.45)]"
+              />
+
+              <h2 className="text-3xl font-black tracking-[0.25em] bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                CIVITERA
+              </h2>
+            </div>
           </div>
 
           <p className="text-gray-400 leading-relaxed">
