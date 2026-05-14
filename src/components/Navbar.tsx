@@ -122,6 +122,9 @@ export default function Navbar() {
           >
             Contact
           </button>
+          <a href="/about" className="text-cyan-400">
+            About
+          </a>
         </div>
       </header>
 
@@ -144,6 +147,12 @@ export default function Navbar() {
           </a>
           <a href="/contact" className="text-cyan-400">
             Contact
+          </a>
+          <a
+            href="/about"
+            className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+          >
+            About
           </a>
         </div>
       )}
