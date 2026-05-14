@@ -100,6 +100,12 @@ export default function Navbar() {
             >
               Governance
             </a>
+            <a
+              href="/contact"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              Contact
+            </a>
           </nav>
 
           <button
@@ -135,6 +141,9 @@ export default function Navbar() {
 
           <a href="/governance" className="text-cyan-400">
             Governance
+          </a>
+          <a href="/contact" className="text-cyan-400">
+            Contact
           </a>
         </div>
       )}
