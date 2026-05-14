@@ -6,7 +6,7 @@ export default function Hero() {
   <div className="flex justify-center mb-10">
 
     <Image
-      src="/logo.png"
+      src="/civitera-logo.png"
       alt="CIVITERA"
       width={140}
       height={140}

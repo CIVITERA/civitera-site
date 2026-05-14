@@ -15,7 +15,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src="/logo.png"
+                src="/civitera-logo.png"
                 alt="CIVITERA Logo"
                 width={64}
                 height={64}
