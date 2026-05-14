@@ -66,6 +66,12 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-5">
             Contact
           </h3>
+
+          <ul className="space-y-3 text-gray-400">
+            <li>info@civitera.ai</li>
+            <li>research@civitera.ai</li>
+            <li>partners@civitera.ai</li>
+          </ul>
           <div className="mt-6">
             <h3 className="text-white font-semibold mb-4">
               Social
@@ -97,11 +103,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <ul className="space-y-3 text-gray-400">
-            <li>info@civitera.ai</li>
-            <li>research@civitera.ai</li>
-            <li>partners@civitera.ai</li>
-          </ul>
         </div>
 
       </div>
