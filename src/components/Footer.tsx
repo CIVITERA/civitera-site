@@ -7,9 +7,15 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
 
         <div>
-          <h2 className="text-3xl font-black tracking-[0.3em] text-cyan-400 mb-6">
-            CIVITERA
-          </h2>
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl border border-cyan-400/40 bg-cyan-400/10 flex items-center justify-center shadow-[0_0_30px_rgba(34,211,238,0.25)]">
+              <span className="text-cyan-400 font-black text-xl">C</span>
+            </div>
+
+            <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
+              CIVITERA
+            </h1>
+          </div>
 
           <p className="text-gray-400 leading-relaxed">
             Sovereign AI infrastructure, governance systems,

@@ -68,10 +68,15 @@ export default function Navbar() {
     <>
       <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-[#050816]/80 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
-            CIVITERA
-          </h1>
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl border border-cyan-400/40 bg-cyan-400/10 flex items-center justify-center shadow-[0_0_30px_rgba(34,211,238,0.25)]">
+              <span className="text-cyan-400 font-black text-xl">C</span>
+            </div>
 
+            <h1 className="text-2xl font-black tracking-[0.3em] text-cyan-400">
+              CIVITERA
+            </h1>
+          </div>
           <nav className="hidden md:flex gap-8 text-sm">
             <a
               href="/"
