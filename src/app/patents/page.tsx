@@ -72,7 +72,6 @@ export default function PatentsPage() {
           ))}
         </div>
       </section>
-      <Footer />
     </main>
   );
 }
