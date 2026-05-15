@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Brain, Globe, Cpu, Network, Lock } from "lucide-react";
 import { useEffect, useState } from "react";
-
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -208,26 +207,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <footer className="relative z-10 border-t border-white/10 bg-black/20 backdrop-blur-xl py-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div>
-            <h3 className="text-2xl font-black tracking-[0.3em] text-cyan-400 mb-4">CIVITERA</h3>
-            <p className="text-gray-400 leading-relaxed">
-              Sovereign AI infrastructure, governance systems, civilization-scale intelligence,
-              and future digital ecosystems.
-            </p>
-          </div>
-
-          <FooterColumn title="Technologies" items={["AI Governance", "Sovereign Infrastructure", "Autonomous Systems", "Patent Ecosystems"]} />
-          <FooterColumn title="Company" items={["Research", "Innovation Labs", "Strategic Partnerships", "Global Infrastructure"]} />
-          <FooterColumn title="Contact" items={["info@civitera.ai", "Global Sovereign Systems", "AI Infrastructure Division"]} />
-        </div>
-
-        <div className="mt-16 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
-          © 2026 CIVITERA GovTech Inc. All rights reserved.
-        </div>
-      </footer>
     </main>
   );
 }
@@ -262,19 +241,6 @@ function Node({
     <div className={`absolute ${className} px-4 py-3 rounded-full bg-black/40 border border-white/10 text-sm text-gray-300 flex items-center gap-2 backdrop-blur-xl`}>
       <Icon size={16} className="text-cyan-400" />
       {text}
-    </div>
-  );
-}
-
-function FooterColumn({ title, items }: { title: string; items: string[] }) {
-  return (
-    <div>
-      <h4 className="text-white font-semibold mb-4">{title}</h4>
-      <ul className="space-y-3 text-gray-400 text-sm">
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
     </div>
   );
 }
