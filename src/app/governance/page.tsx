@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 export default function GovernancePage() {
   const systems = [
     {
@@ -87,7 +87,6 @@ export default function GovernancePage() {
 
         </div>
       </section>
-      <Footer />
     </main>
   );
 }
