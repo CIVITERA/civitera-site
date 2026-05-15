@@ -17,8 +17,8 @@ export default function Footer() {
               <Image
                 src="/civitera-logo.png"
                 alt="CIVITERA Logo"
-                width={64}
-                height={64}
+                width={82}
+                height={82}
                 className="rounded-xl object-contain drop-shadow-[0_0_25px_rgba(59,130,246,0.45)]"
               />
 

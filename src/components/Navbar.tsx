@@ -18,8 +18,8 @@ export default function Navbar() {
             <Image
               src="/civitera-logo.png"
               alt="CIVITERA"
-              width={56}
-              height={56}
+              width={64}
+              height={64}
               className="rounded-xl object-contain"
             />
 

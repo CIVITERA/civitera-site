@@ -228,7 +228,6 @@ export default function Home() {
           © 2026 CIVITERA GovTech Inc. All rights reserved.
         </div>
       </footer>
-      <Footer />
     </main>
   );
 }

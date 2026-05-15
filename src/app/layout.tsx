@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 export const metadata = {
   title: "CIVITERA — Sovereign AI Infrastructure",
   description:
@@ -54,6 +55,7 @@ export default function RootLayout({
         <div className="animate-page-fade">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
